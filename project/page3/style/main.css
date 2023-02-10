@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap');
+:root {
+  --main-font: 'Dosis', sans-serif;
+  --light-bg: #1B2430;
+  --main-color:#E94560;
+  --font-color: #fff;
+  --transition: .7s;
+  --border:2px solid rgb(51, 51, 51);
+}
+
+
+body{
+font-family: 'Dosis', sans-serif;
+overflow: hidden;
+}
+i{
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  
+}  
+
+.to-up {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #1B2430;
+  display: flex;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  background-color: #E94560;
+  color:#fff;
+  transition: .7s;
+  animation:  upTo 1s infinite alternate;
+  display: none;
+}
+
+.to-up:hover{
+animation: none;
+
+}
+
+@keyframes upTo{
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+}
+#firstpage{
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: #1B2430;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1B2430;
+    width: 70%;
+    margin: auto;
+    border-radius: 6px;
+    z-index: 999;
+}
+.navbar a{
+  transition: .7s;;
+  font-weight: bold;
+}
+.navbar a:hover{
+  transform: translateY(-5px);
+}
+.navbar span ,
+.navbar i,
+.navbar button {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.navbar span:hover ,
+.navbar i:hover ,
+.navbar button:hover {
+  transform: translateY(-5px);
+  color: #E94560;
+}
+.navbar a:hover,
+.navbar .active{
+  color: #E94560!important;
+}
+
+
+/* Movies  */
+.Movies {
+  background-color: #1B2430;
+}
+.Movies span {
+  width: 2rem;
+  padding: 0 20px;
+  background-color:#E94560;
+  color: #fff;
+}
+
+/*  footer  */
+
+.footer span {
+  color: #E94560;
+}
+.footer-social a {
+  transition: .7s;
+}
+
+.footer-social a:hover {
+  color: #E94560;
+}
